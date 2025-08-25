@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye Control Settings</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input { padding: 5px; margin: 10px 0; width: 100%; }
+        button { padding: 10px 20px; }
+        label { display: block; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <h2>🎛️ Eye Control Configuration</h2>
+    <form method="POST">
+        <label>Blink Threshold</label>
+        <input type="number" step="0.001" name="blink_threshold" value="{{ config.blink_threshold }}" required>
+
+        <label>Scroll Cooldown (seconds)</label>
+        <input type="number" step="0.1" name="scroll_cooldown" value="{{ config.scroll_cooldown }}" required>
+
+        <label>Click Hold Time (seconds)</label>
+        <input type="number" step="0.1" name="click_hold_time" value="{{ config.click_hold_time }}" required>
+
+        <button type="submit">💾 Save Settings</button>
+    </form>
+</body>
+</html>

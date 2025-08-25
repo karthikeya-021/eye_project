@@ -1,0 +1,5 @@
+{
+  "blink_threshold": 0.017,
+  "scroll_cooldown": 0.6,
+  "click_hold_time": 1.2
+}
